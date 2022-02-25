@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <SplitPane dividerPositions="0.19980119284294234" layoutX="176.0" layoutY="95.0" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="600.0" prefWidth="1000.0" scaleShape="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minWidth="200.0">
+               <children>
+                  <VBox layoutX="10.0" layoutY="14.0" prefHeight="40.0" prefWidth="180.0" styleClass="image" stylesheets="@../style.css" />
+                  <Text layoutX="21.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LED STRIP CONTROL SYSTEM" wrappingWidth="158.876953125" />
+                  <VBox alignment="CENTER" layoutX="1.0" layoutY="170.0" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnConnect" layoutX="70.0" layoutY="158.0" mnemonicParsing="false" onAction="#btnConnect" prefHeight="25.0" prefWidth="89.0" text="Connect" textAlignment="CENTER" />
+                     </children>
+                  </VBox>
+                  <Button fx:id="btnRemote" layoutX="16.0" layoutY="215.0" mnemonicParsing="false" onAction="#btnRemote" prefHeight="54.0" prefWidth="169.0" text="Remote" />
+                  <Button fx:id="btnKey" layoutX="16.0" layoutY="285.0" mnemonicParsing="false" onAction="#btnKey" prefHeight="54.0" prefWidth="169.0" text="Key Control" />
+                  <Button fx:id="btnAudio" layoutX="16.0" layoutY="355.0" mnemonicParsing="false" onAction="#btnAudio" prefHeight="54.0" prefWidth="169.0" text="Audio Control" />
+                  <Button fx:id="btnCustom" layoutX="16.0" layoutY="425.0" mnemonicParsing="false" onAction="#btnCustom" prefHeight="54.0" prefWidth="169.0" text="Custom" />
+                  <Button fx:id="btnSetting" layoutX="16.0" layoutY="495.0" mnemonicParsing="false" onAction="#btnSetting" prefHeight="54.0" prefWidth="169.0" text="Settings" />
+                  <ComboBox fx:id="serialBox" layoutX="26.0" layoutY="133.0" prefWidth="150.0" />
+                  <Button layoutX="74.0" layoutY="98.0" mnemonicParsing="false" onAction="#btnReload" text="Reload" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minWidth="800.0">
+               <children>
+                  <Pane fx:id="funcPane" prefHeight="598.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

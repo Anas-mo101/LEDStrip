@@ -1,0 +1,6 @@
+.image{
+    -fx-background-image: url("imgs/ANMOv2.png");
+    -fx-background-repeat: no-repeat; 
+    -fx-background-size: 180 40; 
+    -fx-background-position: center center; 
+}

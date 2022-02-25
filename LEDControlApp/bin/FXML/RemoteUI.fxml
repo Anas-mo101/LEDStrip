@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RemoteControl">
+   <children>
+      <Text layoutX="122.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interval">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Slider fx:id="sliderInterval" blockIncrement="5.0" layoutX="187.0" layoutY="212.0" max="300.0" min="50.0" onMouseReleased="#sliderInterval" prefHeight="6.0" prefWidth="469.0" showTickLabels="true" showTickMarks="true" value="100.0" />
+      <Label fx:id="Intervallbl" layoutX="680.0" layoutY="203.0" text="0" />
+      <Button layoutX="193.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnOne" prefHeight="45.0" prefWidth="49.0" text="1" />
+      <Button layoutX="193.0" layoutY="364.0" mnemonicParsing="false" onAction="#btnSeven" prefHeight="45.0" prefWidth="49.0" text="7" />
+      <Button layoutX="193.0" layoutY="429.0" mnemonicParsing="false" onAction="#btnD" prefHeight="45.0" prefWidth="49.0" text="D" />
+      <Button layoutX="193.0" layoutY="494.0" mnemonicParsing="false" onAction="#btnJ" prefHeight="45.0" prefWidth="49.0" text="J" />
+      <Button layoutX="268.0" layoutY="429.0" mnemonicParsing="false" onAction="#btnE" prefHeight="45.0" prefWidth="49.0" text="E" />
+      <Button layoutX="268.0" layoutY="364.0" mnemonicParsing="false" onAction="#btnEight" prefHeight="45.0" prefWidth="49.0" text="8" />
+      <Button layoutX="268.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnTwo" prefHeight="45.0" prefWidth="49.0" text="2" />
+      <Button layoutX="343.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnThree" prefHeight="45.0" prefWidth="49.0" text="3" />
+      <Button layoutX="343.0" layoutY="364.0" mnemonicParsing="false" onAction="#btnNine" prefHeight="45.0" prefWidth="49.0" text="9" />
+      <Button layoutX="343.0" layoutY="429.0" mnemonicParsing="false" onAction="#btnF" prefHeight="45.0" prefWidth="49.0" text="F" />
+      <Button layoutX="418.0" layoutY="429.0" mnemonicParsing="false" onAction="#btnG" prefHeight="45.0" prefWidth="49.0" text="G" />
+      <Button layoutX="418.0" layoutY="364.0" mnemonicParsing="false" onAction="#btnA" prefHeight="45.0" prefWidth="49.0" text="A" />
+      <Button layoutX="418.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnFour" prefHeight="45.0" prefWidth="49.0" text="4" />
+      <Button layoutX="493.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnFive" prefHeight="45.0" prefWidth="49.0" text="5" />
+      <Button layoutX="493.0" layoutY="364.0" mnemonicParsing="false" onAction="#btnB" prefHeight="45.0" prefWidth="49.0" text="B" />
+      <Button layoutX="493.0" layoutY="429.0" mnemonicParsing="false" onAction="#btnH" prefHeight="45.0" prefWidth="49.0" text="H" />
+      <Button layoutX="568.0" layoutY="429.0" mnemonicParsing="false" onAction="#btnI" prefHeight="45.0" prefWidth="49.0" text="OFF" />
+      <Button layoutX="568.0" layoutY="364.0" mnemonicParsing="false" onAction="#btnC" prefHeight="45.0" prefWidth="49.0" text="C" />
+      <Button layoutX="568.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnSix" prefHeight="45.0" prefWidth="49.0" text="6" />
+      <ColorPicker fx:id="colorPick" editable="true" layoutX="360.0" layoutY="127.0" onAction="#colorPick" prefHeight="36.0" prefWidth="149.0" />
+      <Text layoutX="275.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Strip Color">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="344.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remote">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
